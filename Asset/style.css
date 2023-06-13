@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: lightgray;
+    background-color:peachpuff;
     padding: 10px;
 }
 
@@ -14,10 +14,96 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px;
+    margin-right: 100px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+.flexbox-container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make it a circle */
+    overflow: hidden; /* Hide any image overflow */
+    margin-right: 20px; /* Adjust the spacing as needed */
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio */
+  }
+  
+  p {
+    flex: 1; /* Expand to fill remaining space */
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px; /* Adjust spacing as needed */
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+  }
+  
+  .contact-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-section li {
+    margin: 0 10px; /* Adjust spacing between list items as needed */
+  }
+  
+  .contact-section li a {
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+  }
+
+  body {
+    background-color:turquoise;
+    background-size: cover;
+    background-position: center;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center; /* Center the section horizontally */
+    align-items: center; /* Center the section vertically */
+}
+
+#About-Projects {
+    width: 300px; /* Set the desired width for the box */
+    padding: 20px; /* Add padding as needed */
+    color: #fff; /* Set the text color */
+    text-align: center;
+    border: 2px solid #ccc; /* Add a border to the box */
+}
+
+.project-images {
+    display: flex;
+    justify-content: space-between; /* Distribute the images evenly */
+    margin-top: 20px; /* Add margin as needed */
+}
+
+.project-images a {
+    flex: 1; /* Distribute the available space equally */
+    margin-right: 10px; /* Add margin between images */
+}
+
+.project-images img {
+    width: 100%; /* Make the images fill the available space */
+    border-radius: 5px; /* Add border radius for a rounded appearance */
 }
